@@ -1,0 +1,45 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+span{
+    color: cyan;
+}
+body{
+    min-height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/wwe_cover.jpg) no-repeat;
+    background-size: cover;
+}
+.container{
+    margin-top: 80px;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+}
+
+#grid{
+    align-items: center;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    transition: 0.5s;
+}
